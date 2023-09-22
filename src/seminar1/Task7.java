@@ -4,7 +4,7 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 
-public class task7 {
+public class Task7 {
     public static void main(String[] args) {
         write();
     }

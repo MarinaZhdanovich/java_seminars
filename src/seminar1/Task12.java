@@ -21,15 +21,14 @@ class Calculator {
             } else {
                 throw new IllegalArgumentException("Некорректный оператор: '" + op + "'");
             }
-        } catch (ArithmeticException | IllegalArgumentException e){
+        } catch (ArithmeticException | IllegalArgumentException e) {
             System.out.println(e.getMessage());
             return -1;
         }
     }
 }
 
-
-public class Task12{
+public class Task12 {
     public static void main(String[] args) {
         int a = 0;
         char op = ' ';
@@ -38,8 +37,8 @@ public class Task12{
         if (args.length == 0) {
             // При отправке кода на Выполнение, вы можете варьировать эти параметры
             a = 3;
-            op = '+';
-            b = 7;
+            op = '/';
+            b = 0;
         } else {
             a = Integer.parseInt(args[0]);
             op = args[1].charAt(0);

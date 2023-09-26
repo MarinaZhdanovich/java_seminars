@@ -1,0 +1,6 @@
+сент. 26, 2023 2:52:32 PM seminar2.Task5 write
+INFO: ошибка
+сент. 26, 2023 3:23:02 PM seminar2.Task5 write
+INFO: ошибка
+сент. 26, 2023 3:25:20 PM seminar2.Task5 write
+INFO: ошибка

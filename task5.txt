@@ -1,0 +1,10 @@
+.git
+.gitignore
+.idea
+log.0.0.txt
+log.config
+out
+Seminar.iml
+src
+task5.txt
+task7.txt

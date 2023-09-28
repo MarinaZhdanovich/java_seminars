@@ -30,10 +30,10 @@ public class Task5 {
 
     public static void write (String path) {
         try (FileWriter in = new FileWriter("task5.txt")) {
-             String[] data = getFileString(path);
-             for (String s: data){
+             String[] data = getFileString(path); //возвращает массив строк
+             for (String s: data){ // для каждой строки s в data
                  in.append(s).append("\n");
-                 in.flush();
+                 in.flush(); //flush немедленно записывает изменения в файл.
              }
              throw new IOException();
         } catch (IOException e) {

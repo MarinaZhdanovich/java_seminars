@@ -3,6 +3,7 @@
 .idea
 log.0.0.txt
 log.config
+log.txt
 out
 Seminar.iml
 src

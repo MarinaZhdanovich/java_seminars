@@ -4,3 +4,7 @@ INFO: ошибка
 INFO: ошибка
 сент. 26, 2023 3:25:20 PM seminar2.Task5 write
 INFO: ошибка
+сент. 28, 2023 1:24:11 PM seminar2.Task5 write
+INFO: ошибка
+сент. 28, 2023 1:27:45 PM seminar2.Task5 write
+INFO: ошибка

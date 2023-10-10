@@ -20,13 +20,14 @@ package seminar5;
 import java.util.HashMap;
 
 class NamesCounter {
-    private HashMap<String, Integer> names = new HashMap<>();
+    private HashMap<String, Integer> names = new HashMap<>(); //В HashMap ключи уникальные
 
     // Метод для добавления имени в HashMap
     public void addName(String name) {
         // Если имя уже есть в HashMap, увеличиваем счетчик на 1, иначе добавляем счетчик равный 1.
         names.put(name, names.getOrDefault(name, 0) + 1); //getOrDefault принимает два аргумента: ключ name и значение по умолчанию 0.
     } // он предназначен для избежания исключения, если ключ отсутствует в коллекции.
+    //каждое новое put заменяет предыдущее значение для ключа "name
 
     // Метод для вывода содержимого HashMap
     public void showNamesOccurrences() {

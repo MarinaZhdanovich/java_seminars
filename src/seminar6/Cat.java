@@ -39,6 +39,7 @@ public class Cat {
         return (int) (this.name.hashCode() + this.age + this.weight);
     }
 
+
     public static void main(String[] args) {
         Cat cat = new Cat("Барсик", 3, 5.2);
         Cat cat2 = new Cat("Барсик", 3, 5.2);

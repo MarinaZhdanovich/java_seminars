@@ -5,7 +5,7 @@ package oop_seminar1.two;
  */
 public class BottleOfWater extends Product{
     private double volume;
-    public BottleOfWater(String name, double cost) {
+    public BottleOfWater(String name, double cost, double volume) {
         super(name, cost); //конструктор суперкласса Product, инициализация поля name и cost
         this.volume = volume;
     }
@@ -13,9 +13,9 @@ public class BottleOfWater extends Product{
     @Override
     public String toString() {
         return "BottleOfWater{" +
-                "name=" + super.getName() +
-                "volume=" + volume +
-                "cost=" + super.getCost() +
+                "name='" + super.getName() + '\'' +
+                ", volume=" + volume +
+                ", cost=" + super.getCost() +
                 '}';
     }
 

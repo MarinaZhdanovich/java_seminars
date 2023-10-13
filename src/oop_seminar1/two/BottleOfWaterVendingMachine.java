@@ -27,6 +27,14 @@ public class BottleOfWaterVendingMachine implements IVendingMachine{
         return null;
     }
 
+    public BottleOfWater getProduct(String name, double volume) {
+        for (BottleOfWater bottle : bottleOfWaterList) {
+            if (bottle.getName().equals(name) && bottle.getVolume() == volume)
+                return bottle;
+        }
+        return  null;
+    }
+
     public List<BottleOfWater> getBottleOfWaterList() {
         return bottleOfWaterList;
     }

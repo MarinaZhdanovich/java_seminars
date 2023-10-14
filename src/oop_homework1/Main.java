@@ -1,9 +1,5 @@
 package oop_homework1;
 
-import oop_seminar1.three.BottleOfMilk;
-import oop_seminar1.three.Product;
-import oop_seminar1.two.BottleOfWater;
-
 import java.util.ArrayList;
 import java.util.List;
 

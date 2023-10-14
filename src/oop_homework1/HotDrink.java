@@ -44,8 +44,8 @@ public class HotDrink {
     }
 
     private void checkVolume (double volume){
-        if (volume < 70){
-            this.volume = 70;
+        if (volume < 50){
+            this.volume = 50;
         } else {
             this.volume = volume;
         }

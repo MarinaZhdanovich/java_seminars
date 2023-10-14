@@ -35,23 +35,23 @@ public class HotDrink {
         checkCost(cost);
     }
 
-    private void checkName(String name){
-        if (name == null || name.length() < 2){
+    private void checkName(String name) {
+        if (name == null || name.length() < 2) {
             this.name = "<name>";
         } else {
             this.name = name;
         }
     }
 
-    private void checkVolume (double volume){
-        if (volume < 50){
+    private void checkVolume(double volume) {
+        if (volume < 50) {
             this.volume = 50;
         } else {
             this.volume = volume;
         }
     }
 
-    private void checkCost(double cost){
+    private void checkCost(double cost) {
         if (cost < 200) {
             this.cost = 200;
         } else {

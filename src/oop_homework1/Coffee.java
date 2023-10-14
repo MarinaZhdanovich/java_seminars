@@ -1,25 +1,25 @@
 package oop_homework1;
 
-public class Coffee extends HotDrink{
+public class Coffee extends HotDrink {
     /**
      * Температура кофе
      */
-    private double temperature;
+    private int temperature;
 
-    public Coffee(String name, double volume, double cost, double temperature) {
+    public Coffee(String name, double volume, double cost, int temperature) {
         super(name, volume, cost);
         this.temperature = temperature;
     }
 
-    public double getTemperature() {
+    public int getTemperature() {
         return temperature;
     }
 
-    public void setTemperature(double temperature) {
+    public void setTemperature(int temperature) {
         this.temperature = temperature;
     }
 
-    private void checkTemperature(double temperature){
+    private void checkTemperature(int temperature) {
         if (temperature < 30) {
             this.temperature = 50;
         } else {

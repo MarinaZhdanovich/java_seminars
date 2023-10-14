@@ -22,28 +22,28 @@ public class Main {
 
 
         List<HotDrink> hotDrinksByName = machine.getHotDrinksByName("Американо");
-        System.out.println("Горячие напитки с именем Американо: " );
+        System.out.println("Горячие напитки с именем Американо: ");
         for (HotDrink hotDrink : hotDrinksByName) {
             System.out.println(hotDrink);
         }
         System.out.println();
 
         List<HotDrink> hotDrinksByVolume = machine.getHotDrinksByVolume(300);
-        System.out.println("Горячие напитки с объемом 300 мл: " );
+        System.out.println("Горячие напитки с объемом 300 мл: ");
         for (HotDrink hotDrink : hotDrinksByVolume) {
             System.out.println(hotDrink);
         }
         System.out.println();
 
         List<HotDrink> hotDrinksByCost = machine.getHotDrinksByCost(300);
-        System.out.println("Горячие напитки с ценой 300 рублей: " );
+        System.out.println("Горячие напитки с ценой 300 рублей: ");
         for (HotDrink hotDrink : hotDrinksByCost) {
             System.out.println(hotDrink);
         }
         System.out.println();
 
         List<HotDrink> hotDrinksByTemperature = machine.getHotDrinksByTemperature(70);
-        System.out.println("Горячие напитки с температурой 70 градусов: " );
+        System.out.println("Горячие напитки с температурой 70 градусов: ");
         for (HotDrink hotDrink : hotDrinksByTemperature) {
             System.out.println(hotDrink);
         }

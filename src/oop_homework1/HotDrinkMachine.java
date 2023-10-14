@@ -3,7 +3,7 @@ package oop_homework1;
 import java.util.ArrayList;
 import java.util.List;
 
-public class HotDrinkMachine implements VendingMachine{
+public class HotDrinkMachine implements VendingMachine {
     private List<HotDrink> hotDrinkList;
 
     public HotDrinkMachine(List<HotDrink> hotDrinkList) {

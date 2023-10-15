@@ -7,8 +7,8 @@ public class Main {
     public static void main(String[] args) {
         HotDrink coffee1 = new Coffee("Американо", 70, 250, 70);
         HotDrink coffee2 = new Coffee("Американо", 100, 300, 70);
-        HotDrink coffee3 = new Coffee("Лате", 300, 400, 80);
-        HotDrink coffee4 = new Coffee("Лате", 100, 250, 75);
+        HotDrink coffee3 = new Coffee("Латте", 300, 400, 80);
+        HotDrink coffee4 = new Coffee("Латте", 100, 250, 75);
         HotDrink coffee5 = new Coffee("Капучино", 200, 300, 75);
 
         List<HotDrink> hotDrinks = new ArrayList<>();

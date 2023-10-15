@@ -49,9 +49,9 @@ public class Main {
         }
         System.out.println();
 
-        HotDrink coffee = machine.getProduct("Американо", 100, 70);
+        HotDrink coffee = machine.getHotDrink("Американо", 100, 70);
         if (coffee != null) {
-            System.out.println("Найден горячий напиток по имени, объему и температуре: " + coffee);
+            System.out.println("Горячий напиток по имени, объему и температуре: " + coffee);
         } else {
             System.out.println("Горячий напиток не найден по имени, объему и температуре.");
         }

@@ -47,6 +47,14 @@ public class Main {
         for (HotDrink hotDrink : hotDrinksByTemperature) {
             System.out.println(hotDrink);
         }
+        System.out.println();
+
+        HotDrink coffee = machine.getProduct("Американо", 100, 70);
+        if (coffee != null) {
+            System.out.println("Найден горячий напиток по имени, объему и температуре: " + coffee);
+        } else {
+            System.out.println("Горячий напиток не найден по имени, объему и температуре.");
+        }
     }
 }
 

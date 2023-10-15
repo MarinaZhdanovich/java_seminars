@@ -60,4 +60,18 @@ public class HotDrinkMachine implements VendingMachine {
         }
         return result;
     }
+
+    public HotDrink getProduct(String name, double volume, int temperature) {
+        for (HotDrink hotDrink : hotDrinkList) {
+            if (hotDrink.getName().equals(name) && hotDrink.getVolume() == volume) {
+                if (hotDrink instanceof Coffee) {
+                    Coffee coffee = (Coffee) hotDrink;
+                    if (coffee.getTemperature() == temperature) {
+                        return hotDrink;
+                    }
+                }
+            }
+        }
+        return null;
+    }
 }

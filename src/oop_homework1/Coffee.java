@@ -8,7 +8,7 @@ public class Coffee extends HotDrink {
 
     public Coffee(String name, double volume, double cost, int temperature) {
         super(name, volume, cost);
-        this.temperature = temperature;
+        checkTemperature(temperature);
     }
 
     public int getTemperature() {

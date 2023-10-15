@@ -6,9 +6,9 @@ public class HotDrink {
     private double cost;
 
     public HotDrink(String name, double volume, double cost) {
-        this.name = name;
-        this.volume = volume;
-        this.cost = cost;
+        checkName(name);
+        checkVolume(volume);
+        checkCost(cost);
     }
 
     public String getName() {

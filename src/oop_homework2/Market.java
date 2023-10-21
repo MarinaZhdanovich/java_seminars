@@ -60,8 +60,8 @@ public class Market implements MarketBehaviour, QueueBehaviour{
     @Override
     public void releaseFromMarket(List<Actor> actors) {
         for(Actor actor: actors){
-            queue.remove(actor);
             System.out.println(actor.getName() + " вышел из магазина");
+            queue.remove(actor);
         }
     }
 

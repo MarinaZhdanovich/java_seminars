@@ -1,4 +1,4 @@
-package oop_seminar2.one;
+package oop_homework2;
 
 import java.util.List;
 
@@ -7,9 +7,3 @@ public interface MarketBehaviour {
     void releaseFromMarket(List<Actor> actors);
     void update();
 }
-
-
-
-
-
-

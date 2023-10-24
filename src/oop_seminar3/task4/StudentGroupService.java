@@ -1,5 +1,7 @@
 package oop_seminar3.task4;
 
+import oop_homework3.Stream;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Collections;

@@ -9,7 +9,7 @@ import java.util.List;
 
 public class Stream implements Iterable<StudentGroup> {
     private String name;
-    List<StudentGroup> studentGroups;
+    protected List<StudentGroup> studentGroups;
 
     public Stream(String name, List<StudentGroup> studentGroups) {
         this.name = name;

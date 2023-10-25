@@ -1,4 +1,4 @@
-package oop_seminar3.task4;
+package oop_seminar3.task3;
 
 public class Student implements Comparable<Student> {
     private String firstName;

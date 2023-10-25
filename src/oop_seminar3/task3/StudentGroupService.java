@@ -1,6 +1,4 @@
-package oop_seminar3.task4;
-
-import oop_homework3.Stream;
+package oop_seminar3.task3;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -7,12 +7,17 @@ import oop_homework7.model.CalculatorModel;
 import oop_homework7.view.CalculatorView;
 import oop_homework7.view.ConsoleCalculatorView;
 
+import java.io.IOException;
 import java.util.logging.*;
 
 public class Main {
     private static final Logger logger = Logger.getLogger(Main.class.getName());
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
+        FileHandler fileHandler = new FileHandler("logHomework7.txt");
+        logger.addHandler(fileHandler);
+        SimpleFormatter simpleFormatter = new SimpleFormatter();
+        fileHandler.setFormatter(simpleFormatter);
 
         logger.info("Программа запущена");
 

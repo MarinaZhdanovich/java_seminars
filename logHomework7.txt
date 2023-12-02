@@ -1,0 +1,4 @@
+дек. 02, 2023 5:43:40 PM oop_homework7.Main main
+INFO: Программа запущена
+дек. 02, 2023 5:43:46 PM oop_homework7.Main main
+INFO: Программа завершена

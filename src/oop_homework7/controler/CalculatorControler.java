@@ -6,15 +6,15 @@ import oop_homework7.view.CalculatorView;
 import java.util.Scanner;
 import java.util.logging.Logger;
 
-
 public class CalculatorControler {
     private final CalculatorModel model;
     private final CalculatorView view;
-    private static final Logger logger = Logger.getLogger(CalculatorControler.class.getName());
+    private final Logger logger;
 
-    public CalculatorControler(CalculatorModel model, CalculatorView view) {
+    public CalculatorControler(CalculatorModel model, CalculatorView view, Logger logger) {
         this.model = model;
         this.view = view;
+        this.logger = logger;
     }
 
     public void calculate() {

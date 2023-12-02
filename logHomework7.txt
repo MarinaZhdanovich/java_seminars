@@ -1,4 +1,6 @@
-дек. 02, 2023 5:43:40 PM oop_homework7.Main main
+дек. 02, 2023 6:08:57 PM oop_homework7.Main main
 INFO: Программа запущена
-дек. 02, 2023 5:43:46 PM oop_homework7.Main main
+дек. 02, 2023 6:09:04 PM oop_homework7.controler.CalculatorControler calculate
+WARNING: Попытка деления на ноль
+дек. 02, 2023 6:09:04 PM oop_homework7.Main main
 INFO: Программа завершена

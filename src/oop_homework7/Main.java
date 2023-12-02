@@ -11,22 +11,25 @@ import java.io.IOException;
 import java.util.logging.*;
 
 public class Main {
-    private static final Logger logger = Logger.getLogger(Main.class.getName());
-
     public static void main(String[] args) throws IOException {
         FileHandler fileHandler = new FileHandler("logHomework7.txt");
-        logger.addHandler(fileHandler);
+        fileHandler.setLevel(Level.ALL);
         SimpleFormatter simpleFormatter = new SimpleFormatter();
         fileHandler.setFormatter(simpleFormatter);
+
+        Logger logger = Logger.getLogger(Main.class.getName());
+        logger.addHandler(fileHandler);
 
         logger.info("Программа запущена");
 
         CalculatorModel model = new Calculator();
         CalculatorView view = new ConsoleCalculatorView();
-        CalculatorControler controller = new CalculatorControler(model, view);
+        CalculatorControler controller = new CalculatorControler(model, view, logger);
 
         controller.calculate();
 
         logger.info("Программа завершена");
+
+        fileHandler.close();
     }
 }

@@ -1,10 +1,7 @@
 package exceptions_seminar2;
 
 
-import java.io.BufferedReader;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -23,7 +20,10 @@ import java.util.List;
  */
 public class Main {
     public static void main(String[] args) {
-
+        String patch = "C:\\Users\\User\\IdeaProjects\\Seminar\\src\\exceptions_seminar2\\names.txt";
+        List<String[]> list = readFile(patch);
+        modificationArray(list);
+        writeFile(list, patch);
     }
 
     public static List<String[]> readFile (String patch) {
@@ -59,7 +59,13 @@ public class Main {
 
     public static void writeFile(List<String[]>list, String patch) {
         try {
-            
+            BufferedWriter writer = new BufferedWriter(new FileWriter(patch));
+            for (String [] itemList : list) {
+                writer.write(itemList[0] + "=" + itemList[1] + "\n");
+            }
+            writer.close();
+        } catch (IOException e) {
+            System.out.println(e.getMessage());
         }
     }
 }

@@ -15,38 +15,50 @@ int и просуммировать. Если в каком-то элемент�
  */
 public class Task4 {
     public static int checkArray(String[][] array) {
-        if (array.length != 4 || array[0].length != 4) throw new MyArraySizeException(array.length, array[0].length);
+        if (array.length != 4 || array[0].length != 4) {
+            throw new MyArraySizeException();
+        }
+
         int sum = 0;
-        for (String[] arr : array) {
-            for (String i : arr) {
+
+        for (int i = 0; i < array.length; i++) {
+            for (int j = 0; j < array[i].length; j++) {
                 try {
-                    sum += Integer.parseInt(i);
+                    sum += Integer.parseInt(array[i][j]);
                 } catch (NumberFormatException e) {
-                    throw new MyArrayDataException();
+                    throw new MyArrayDataException(i, j);
                 }
             }
         }
+
         return sum;
     }
-}
-class MyArraySizeException extends RuntimeException {
 
-    public MyArraySizeException(int row, int colum) {
-        super("Массив должен быть 4х4, размеры вашего массива -> " + row + "х" + colum);
+    public static void main(String[] args) {
+        String[][] correctArray = {
+                {"1", "2", "3", "4"},
+                {"5", "6", "4", "8"},
+                {"9", "10", "11", "12"},
+                {"13", "14", "15", "16"}
+        };
+
+        try {
+            int result = checkArray(correctArray);
+            System.out.println("Сумма элементов массива: " + result);
+        } catch (MyArraySizeException | MyArrayDataException e) {
+            System.out.println(e.getMessage());
+        }
     }
+}
 
-    public MyArraySizeException(){
+class MyArraySizeException extends RuntimeException {
+    public MyArraySizeException() {
         super("Массив должен быть 4х4");
     }
 }
 
-class MyArrayDataException extends NumberFormatException{
-    public MyArrayDataException(){
-        super("В каком-то элементе массива преобразование не удалось");
-    }
-
+class MyArrayDataException extends RuntimeException {
     public MyArrayDataException(int i, int j) {
-        super("Преобразование не удалось, индексы->" + i + ":" + j);
+        super("Преобразование не удалось, индексы -> " + i + ":" + j);
     }
 }
-
